@@ -7,11 +7,5 @@ upower -e
 # Get battery  
 upower -i `upower -e | grep 'BAT'`
 
-
-
 # Get charging status
-
-upower -i /org/freedesktop/UPower/devices/battery_BAT0
-upower -i `upower -e | grep 'BAT'`
-
-upower -i $(upower -e | grep BAT) | grep --color=never -E "state|to\ full|to\ empty|percentage"
+echo alias zzb='upower -i $(upower -e | grep BAT) | grep --color=never -E "state|to\ full|to empty|percentage"' >> /etc/profile
