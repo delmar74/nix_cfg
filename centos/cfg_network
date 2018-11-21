@@ -1,0 +1,11 @@
+# View Status network
+nmcli d
+
+# Edit connection 
+nmtui
+
+# Restart network services
+service network restart
+
+# Get ip address
+ip a
