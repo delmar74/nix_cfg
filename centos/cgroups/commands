@@ -1,0 +1,32 @@
+# Get cgroups (with slices)
+systemd-cgls
+
+# Monitoring resource (see cgroups in interactive)
+systemd-cgtop
+
+# Get points of mount for cgroups
+grep cgroup /proc/mounts
+
+# View UID of users
+cat /etc/passwd
+
+# Limit Memory (=200Mb) for user with UID=1000
+systemctl set-property user-1000.slice MemoryLimit=200M
+
+
+## DOCKER CONTAINERS ##############################################################
+
+# Stats
+docker stats
+docker stats ContainerName1 ContainerName2
+
+# Stats ( https://docs.docker.com/engine/reference/commandline/stats
+docker stats --format "table {{.ID}}\t{{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}"
+
+
+# cgroup for container - /sys/fs/cgroup/<resource>/docker/<longid>
+cd /sys/fs/cgroup/memory/docker/
+ls -l | grep '^d'
+##drwxr-xr-x. 2 root root 0 Nov 24 17:21 858e53a0ca4a36c6ec6b51ba01669113c7076fe0f7232f8a9004c2107b6057bb
+
+
