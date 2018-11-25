@@ -6,10 +6,10 @@ cd /etc/yum.repos.d
 
 wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
 
-yum --enablerepo=epel install dkms
+yum -y --enablerepo=epel install dkms
 
-yum groupinstall "Development Tools"
-yum install kernel-devel
+yum groupinstall -y "Development Tools"
+yum install -y kernel-devel
 
-yum install VirtualBox-5.1
+yum install -y VirtualBox-5.1
 

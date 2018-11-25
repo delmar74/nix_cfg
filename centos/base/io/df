@@ -1,0 +1,20 @@
+#######################
+# df - Disk Space
+#######################
+
+# Get space on all filesystems
+# -h - human view (for space)
+df -h
+
+# Get space on current disk (/)
+df -hT /
+## Filesystem                Type  Size  Used Avail Use% Mounted on
+## /dev/mapper/centos00-root xfs   200G   11G  190G   6% /
+
+
+# Get space on all filesystems
+df -a
+df -a | grep docker
+
+# Get information of iNodes
+df -i
