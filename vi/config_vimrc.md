@@ -20,7 +20,7 @@ colorscheme blue
 
 | Action | Command |
 | ----------- | -----------
-| Copy and Paste block | Ctr+v , y , p |
+| Copy and Paste block | V (ctr+v) , y , p |
 
  
 
