@@ -1,0 +1,10 @@
+# Download atom.rpm
+wget https://atom.io/download/rpm
+
+# Install atom.rpm
+yum localinstall atom.x86_64.rpm
+
+# Configure for python
+## In atom:
+## - Edit > Preferences > Install > script (Packages), click "Install"
+##

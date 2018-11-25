@@ -8,4 +8,4 @@ upower -e
 upower -i `upower -e | grep 'BAT'`
 
 # Get charging status
-echo alias zzb='upower -i $(upower -e | grep BAT) | grep --color=never -E "state|to\ full|to empty|percentage"' >> /etc/profile
+echo alias zzb='upower -i $(upower -e | grep BAT) | grep --color=never -E "state|to\ full|to\ empty|percentage"' >> /etc/profile.d/aliases.sh

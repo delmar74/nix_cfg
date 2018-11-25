@@ -1,0 +1,5 @@
+cd /etc/profile.d/aliases.sh
+
+touch aliases.sh
+
+chmod 755 aliases.sh
