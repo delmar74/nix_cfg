@@ -1,15 +1,11 @@
-# Links
-* Scripting in Vim: http://learnvimscriptthehardway.stevelosh.com/
-
-
-
 # Files and Dir
 Config file: ~/.vimrc
  /usr/share/vim/vim80/colors/
 
+## vimrc
 
-set number
-set tabstop=2
+set number # add number of row  
+set tabstop=2 # tab = 2*space
 syntax on
 colorscheme blue
   5 " /usr/share/vim/vim80/colors/
